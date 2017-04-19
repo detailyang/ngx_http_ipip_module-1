@@ -11,7 +11,7 @@ Table of Contents
 * [How-To-Use](#how-to-use)
 * [How-To-Autoupdate](#how-to-autoupdate)
 * [Requirements](#requirements)
-* [Direction](#direction)
+* [Directive](#directive)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -82,13 +82,18 @@ ngx_http_ipip_module requires the following to run:
  * [test-nginx](https://github.com/openresty/test-nginx) only for run tests
  * [ipip] ip datx and phone number txt file
 
-Direction
-------------
+Directive
+---------
+
+ipip_ip_datx:
 
 * ipip_ip_datx: sepcify the ip datx file
-Syntax:     ipip_ip_datx /path/to/file
-Default:    -
-Context:    main
+
+**Syntax:**     ipip_ip_datx /path/to/file
+
+**Default:**    -
+
+**Context:**    main
 
 ```bash
 http {
@@ -97,9 +102,12 @@ http {
 ```
 
 * ipip_phone_txt: sepcify the phone txt file
-Syntax:     ipip_phone_txt /path/to/file
-Default:    -
-Context:    main
+
+**Syntax:**     ipip_phone_txt /path/to/file
+
+**Default:**    -
+
+**Context:**    main
 
 ```bash
 http {
@@ -108,9 +116,12 @@ http {
 ```
 
 * ipip: enable the ngx_http_ipip_module
-Syntax:     ipip on|false
-Default:    -
-Context:    loc
+
+**Syntax:**     ipip on|false
+
+**Default:**    -
+
+**Context:**    loc
 
 ```bash
 location / {
